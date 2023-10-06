@@ -1,4 +1,4 @@
-plugins {
+45abaa351aplugins {
     id 'java'
     id 'java-gradle-plugin'
     id 'idea'
@@ -13,7 +13,7 @@ description = 'Gradle plugin providing tasks to generate Web3j contracts from So
 sourceCompatibility = 17
 
 ext {
-    web3jVersion = version
+    web3jVersion = "4.10.3"
 }
 
 apply {

@@ -1,4 +1,4 @@
-45abaa351aplugins {
+plugins {
     id 'java'
     id 'java-gradle-plugin'
     id 'idea'

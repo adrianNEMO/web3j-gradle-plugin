@@ -12,10 +12,6 @@
 description = 'Gradle plugin providing tasks to generate Web3j contracts from Solidity.'
 sourceCompatibility = 17
 
-ext {
-    web3jVersion = "4.10.3"
-}
-
 apply {
     [
         'jacoco',
@@ -44,10 +40,10 @@ repositories {
 
 dependencies {
     implementation "com.github.adrianNEMO:solidity-gradle-plugin:master-SNAPSHOT"
-    implementation("org.web3j:core:$web3jVersion") {
+    implementation("org.web3j:core:4.10.3") {
         exclude group: 'org.slf4j', module: 'slf4j-nop'
     }
-    implementation("org.web3j:codegen:$web3jVersion") {
+    implementation("org.web3j:codegen:4.10.3") {
         exclude group: 'org.slf4j', module: 'slf4j-nop'
     }
     testImplementation "junit:junit:$junitVersion"
